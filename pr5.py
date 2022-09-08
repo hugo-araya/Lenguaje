@@ -1,0 +1,1 @@
+print ('Su ganacia es de : ',int(input('Indique la cantidad de dinero a invertir: ')) * 2 /100)
