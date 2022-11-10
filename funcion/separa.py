@@ -1,0 +1,16 @@
+ent = open('nombre.txt')
+sal1 = open('primer.txt','w')
+sal2 = open('apellido.txt', 'w')
+edades = 0
+linea = ent.readline()
+while linea != '':
+    linea = linea.rstrip('\n')
+    lista = linea.split(' ')
+    sal1.write(lista[0]+'\n')
+    sal2.write(lista[1].upper()+'\n')
+    edades = edades + int(lista[2])
+    linea = ent.readline()
+ent.close()
+sal1.close()
+sal2.close()
+print('Promedio: ', edades/6)
